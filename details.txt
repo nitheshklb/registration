@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>details</title>
+</head>
+<style>
+body
+{
+background-image:url(images3.jpg);
+background-size:100%;
+text-align:center;
+}
+table
+{
+table-align:center;
+color:FAEB92;
+font-size:25px;
+}
+h1{
+color:FBF5DE;
+font-size:30;
+}
+</style>
+<h1><b><u>Your Details</b></u></h1>
+<center><body>
+<table border="5">
+<tr><td><b>The First name is:</td><td></b> <b><lable id="Fname"></lable></b></td></tr>
+<tr><td><b>The last name is:</b></td><td> <b><lable id="Lname"></lable></b></td></tr>
+<tr><td><b>The valid email is:</b></td><td> <b><lable id="email"></lable></b></td></tr>
+<tr><td><b>The phone number is:</b></td><td> <b><lable id="Phno"></lable></b></td></tr>
+<tr><td><b>The password is:</b></td><td> <b><lable id="password"></lable></b></td></tr>
+<tr><td><b>The confirmpassword is:</b></td><td> <b><lable id="confirmpassword"></lable></b></td></tr>
+<tr><td><b>The Branch is:</b></td><td> <b><lable id="Branch"></lable></b></td></tr>
+</table>
+<script>
+var a=localStorage.getItem("Fname");
+var b=localStorage.getItem("Lname");
+var c=localStorage.getItem("email");
+var d=localStorage.getItem("Phno");
+var e=localStorage.getItem("password");
+var f=localStorage.getItem("confirmpassword");
+var g=localStorage.getItem("Branch");
+
+document.getElementById("Fname").innerHTML=a;
+document.getElementById("Lname").innerHTML=b;
+document.getElementById("email").innerHTML=c;
+document.getElementById("Phno").innerHTML=d;
+document.getElementById("password").innerHTML=e;
+document.getElementById("confirmpassword").innerHTML=f;
+document.getElementById("Branch").innerHTML=g;
+</script>
+</body>
+</center>
+</html>
+nithesh
